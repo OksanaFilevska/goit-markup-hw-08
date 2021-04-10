@@ -1,30 +1,36 @@
 .modal-form {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    &__field {
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 1.166;
-      letter-spacing: 0.01em;
-      color: var(--primary-text-colour);
-      margin-bottom: 4px;
-    }
-  }
-  .message {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-title-text-colour);
     margin-top: 0;
     margin-bottom: 12px;
   }
+
+  &__field {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+      color: var(--primary-text-colour);
+      margin-bottom: 4px;
+    }
+  }
+ 
+
+
   .form-wrapper {
     position: relative;
     display: block;
     margin-bottom: 10px;
+  
     &__input {
       width: 100%;
       height: 40px;
@@ -33,24 +39,27 @@
       padding-left: 42px;
       padding-right: 12px;
       transition: border-color 250ms var(--timing-function);
+  
       &:focus {
         outline: none;
         border-color: var(--accent-colour);
       }
     }
+    
     &__icon {
       position: absolute;
       top: 50%;
       left: 12px;
       transform: translateY(-50%);
       display: block;
-      fill: var(--title-color);
+      fill: var(--secondary-title-text-colour);
       transition: fill 250ms var(--timing-function);
       .form-wrapper__input:focus + & {
         fill: var(--accent-colour);
       }
     }
   }
+
   .modal-form__message {
     width: 100%;
     height: 120px;
@@ -61,21 +70,28 @@
     resize: none;
     transition: border-color 250ms var(--timing-function);
     &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
     }
+
     &:focus {
       outline: none;
       border-color: var(--accent-colour);
     }
   }
+
   .modal-form__check-desc {
     display: flex;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.66;
     letter-spacing: 0.03em;
     color: var(--primary-text-colour);
     align-items: center;
+
     &::before {
       display: block;
       content: "";
@@ -86,6 +102,7 @@
       cursor: pointer;
       margin-right: 8px;
       transition: border 250ms var(--timing-function);
+
       .modal-form__term:checked + & {
         background-image: url("../images/icon-check.svg");
         background-position: center;
@@ -93,6 +110,7 @@
         background-color: var(--accent-colour);
         background-repeat: no-repeat;
       }
+
       .modal-form__term:focus + & {
         border: 2px solid var(--accent-colour);
         border-radius: 2px;
@@ -100,10 +118,11 @@
       }
     }
   }
+
   .policy-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.66;
     letter-spacing: 0.03em;
     color: var(--accent-colour);
   }
@@ -112,3 +131,31 @@
     display: inline-block;
     margin-top: 30px;
   }
+
+  
+    @media screen and (min-width: 1200px) {
+      .modal-form__title {
+        font-size: 20px;
+        line-height: 1.15;
+      }
+      .modal-form__field {
+        font-size: 12px;
+        line-height: 1.166;
+      }
+    
+      .modal-form__message::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+      }
+    
+      .modal-form__check-desc {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    
+      .policy-link {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
+    

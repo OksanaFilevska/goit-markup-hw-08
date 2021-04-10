@@ -1,22 +1,34 @@
 .logo {
     font-family: var(--secondary-font);
-    font-weight: 900;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     display: inline-block;
   
   &__theme-light {
-    color: var(--secondary-title-text-colour);
-    font-weight: bold;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    color: #000000;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   &__accent-text {
-    font-size: 26px;
-    line-height: 1.19;
+    
     color: var(--accent-colour);
+  }
+  @media screen and (min-width: 768px) {
+    &__theme-light {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__theme-light {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
   }
   &__theme-dark {
     color: var(--primary-bg-colour);
