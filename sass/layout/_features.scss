@@ -56,6 +56,9 @@
       margin-bottom: 0px;
     }
   }
+  .feature__title {
+    text-align: unset;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -63,7 +66,9 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
+  .feature__title {
+    text-align: unset;
+  }       
   .feature {
     display: flex;
     flex-wrap: nowrap;
