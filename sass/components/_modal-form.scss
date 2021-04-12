@@ -30,7 +30,6 @@
   position: relative;
   display: block;
   margin-bottom: 10px;
-
   &__input {
     width: 100%;
     height: 40px;
@@ -39,28 +38,24 @@
     padding-left: 42px;
     padding-right: 12px;
     transition: border-color 250ms var(--timing-function);
-
     &:focus {
       outline: none;
       border-color: var(--accent-colour);
     }
   }
-
   &__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     display: block;
-    fill: var(--title-color);
+    fill: var(--secondary-title-text-colour);
     transition: fill 250ms var(--timing-function);
-
     .form-wrapper__input:focus + & {
       fill: var(--accent-colour);
     }
   }
 }
-
 .modal-form__message {
   width: 100%;
   height: 120px;
@@ -70,7 +65,6 @@
   margin-bottom: 20px;
   resize: none;
   transition: border-color 250ms var(--timing-function);
-
   &::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -78,25 +72,21 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-
   &:focus {
     outline: none;
     border-color: var(--accent-colour);
   }
 }
 
-
 .modal-form__check-desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
- 
+  letter-spacing: 0.03em;
+  color: var(--primary-text-colour);
+  align-items: center;
 
   &::before {
     display: block;
@@ -108,7 +98,6 @@
     cursor: pointer;
     margin-right: 8px;
     transition: border 250ms var(--timing-function);
-
     .modal-form__term:checked + & {
       background-image: url("../images/icon-check.svg");
       background-position: center;
@@ -116,7 +105,6 @@
       background-color: var(--accent-colour);
       background-repeat: no-repeat;
     }
-
     .modal-form__term:focus + & {
       border: 2px solid var(--accent-colour);
       border-radius: 2px;
@@ -124,16 +112,14 @@
     }
   }
 }
-
 .policy-link {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--accent-color);
+  letter-spacing: 0.03em;
+  color: var(--accent-colour);
   text-decoration-line: underline;
-}
-
+}  
 .form__button {
   align-self: center;
   display: inline-block;
@@ -149,17 +135,14 @@
     font-size: 12px;
     line-height: 1.16;
   }
-
   .modal-form__message::placeholder {
     font-size: 12px;
     line-height: 1.16;
   }
-
   .modal-form__check-desc {
     font-size: 14px;
     line-height: 1.71;
   }
-
   .policy-link {
     font-size: 14px;
     line-height: 1.71;
