@@ -1,36 +1,38 @@
-.page-feature {
+.page-feature  {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.feature {
+  display: block;
+
+    &__item {
+    width: 100%;
+
+      &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  .feature {
-    display: block;
-  
-  
-    &__item {
-      width: 100%;
-  
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-  
-   &__title {
+  &__title {
     text-align: center;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 14px;  
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     color: var(--secondary-title-text-colour);
     margin-bottom: 10px;
   }
+
   &__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
   &__logo {
     display: flex;
     height: 120px;
@@ -66,9 +68,11 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
   .feature__title {
     text-align: unset;
-  }       
+  }
+
   .feature {
     display: flex;
     flex-wrap: nowrap;
