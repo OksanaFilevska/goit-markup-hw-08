@@ -52,7 +52,7 @@
     justify-content: space-between;
     }
 
-  .feature__item {
+    &__item {
     width: calc((100% - 30px) / 2);
 
     &:nth-last-child(-n + 2) {
