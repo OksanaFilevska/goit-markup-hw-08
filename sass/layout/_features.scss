@@ -6,7 +6,7 @@
 .feature {
   display: block;
 
-    &__item {
+    .feature__item {
     width: 100%;
 
       &:not(:last-child) {
@@ -45,17 +45,17 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .feature {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     }
 
-    .feature__item {
+    &__item {
     width: calc((100% - 30px) / 2);
 
-    &:nth-last-child(-n + 2) {
+      &:nth-last-child(-n + 2) {
       margin-bottom: 0px;
     }
   }
