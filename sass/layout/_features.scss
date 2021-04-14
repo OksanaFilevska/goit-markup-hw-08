@@ -45,7 +45,7 @@
   .feature .feature__item {
     width: calc((100% - 30px) / 2);
   }
-  .feature .feature__item :nth-last-child(-n + 2) {
+  .feature .feature__item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
   }
   .feature__title {
