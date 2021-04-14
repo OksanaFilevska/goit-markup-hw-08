@@ -17,7 +17,7 @@
 }
 
 .burger__icon {
-  fill: var(--title-color);
+  fill: var(--secondary-title-text-colour);
   transition: fill 250ms var(--timing-function);
 
   .burger__btn:hover & {
@@ -180,7 +180,7 @@
     }
 
     .navigation__link--current {
-      color: var(--accent-color);
+      color: var(--accent-colour);
     }
 
     .navigation__link--current::after {
@@ -251,7 +251,7 @@
 }
 
 .navigation__link--current {
-  color: var(--accent-color);
+  color: var(--accent-colour);
 }
 
 .navigation__link--current::after {

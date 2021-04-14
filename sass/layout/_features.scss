@@ -39,10 +39,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background-color: var(--our-team-color);
+    background-color: var(--fourth-bg-colour);
     margin-bottom: 30px;
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature {
@@ -52,7 +53,7 @@
     }
 
   .feature__item {
-    width: calc((100% - 30px) / 2);
+    width:calc((100%-30px) / 2);
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0px;
