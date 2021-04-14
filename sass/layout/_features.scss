@@ -6,10 +6,10 @@
 .feature {
   display: block;
 
-    .feature__item {
+    &__item {
     width: 100%;
 
-     .feature__item:not(:last-child) {
+      &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
@@ -52,8 +52,8 @@
     justify-content: space-between;
     }
 
-    &__item {
-    width: calc((100% - 30px) / 2);
+    .feature__item {
+    width: calc ((100% - 30px) / 2);
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0px;
