@@ -6,14 +6,6 @@
 .feature {
   display: block;
 
-    .feature__item {
-    width: 100%;
-
-      &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
   &__title {
     text-align: center;
     font-weight: 700;
@@ -44,11 +36,17 @@
   }
 }
 
+.feature__item {
+  width: 100%;
 
-@media screen and (min-width: 768px) {
+    &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     }
 
