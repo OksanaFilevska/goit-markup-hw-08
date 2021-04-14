@@ -183,7 +183,7 @@ img {
 }
 
 .burger__icon {
-  fill: var(--title-color);
+  fill: var(--secondary-title-text-colour);
   transition: fill 250ms var(--timing-function);
 }
 
@@ -334,7 +334,7 @@ img {
     color: var(--accent-colour);
   }
   .navigation__link .navigation__link--current {
-    color: var(--accent-color);
+    color: var(--accent-colour);
   }
   .navigation__link .navigation__link--current::after {
     content: "";
@@ -393,7 +393,7 @@ img {
 }
 
 .navigation__link--current {
-  color: var(--accent-color);
+  color: var(--accent-colour);
 }
 
 .navigation__link--current::after {
